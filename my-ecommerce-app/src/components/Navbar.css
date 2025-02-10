@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accenture-primary-color); /* Example variable from the brand CSS */
+    padding: 10px 20px;
+}
+
+.navbar-brand a {
+    color: var(--accenture-text-color); /* Using a brand color variable */
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'AccentureFont', sans-serif;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    color: var(--accenture-text-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links li a:hover {
+    color: var(--accenture-secondary-color);
+}
