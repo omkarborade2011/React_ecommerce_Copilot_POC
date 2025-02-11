@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <p>&copy; {new Date().getFullYear()} My E-commerce App. All rights reserved.</p>

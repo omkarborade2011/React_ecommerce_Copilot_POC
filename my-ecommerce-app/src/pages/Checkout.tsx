@@ -1,9 +1,22 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { RootState } from '../redux/reducers';
 
-const Checkout = () => {
-    const cartItems = useSelector(state => state.product.cart);
-    const user = useSelector(state => state.auth.user);
+interface CartItem {
+    id: number;
+    name: string;
+    price: number;
+    quantity: number;
+}
+
+interface User {
+    name: string;
+    email: string;
+}
+
+const Checkout: React.FC = () => {
+    const cartItems = useSelector((state: RootState) => state.product.cart);
+    const user = useSelector((state: RootState) => state.auth.user);
 
     const handleCheckout = () => {
         // Handle the checkout process here

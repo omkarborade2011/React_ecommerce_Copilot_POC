@@ -3,11 +3,27 @@ import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/actions/productActions';
 import './ProductCard.css';
 
-const ProductCard = ({ product }) => {
+interface Product {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
+}
+
+interface ProductCardProps {
+    product: Product;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     const dispatch = useDispatch();
 
     const handleAddToCart = () => {
-        dispatch(addToCart(product));
+        dispatch(addToCart({
+            ...product, quantity: 1,
+            name: ''
+        }));
     };
 
     return (
