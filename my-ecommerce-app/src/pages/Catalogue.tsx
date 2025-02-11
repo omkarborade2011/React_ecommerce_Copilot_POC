@@ -3,11 +3,28 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../redux/actions/productActions';
 import ProductCard from '../components/ProductCard';
 
-const Catalogue = () => {
+interface Product {
+    id: number;
+    title: string;
+    price: number;
+    image: string;
+    description: string;
+    category: string;
+}
+
+interface RootState {
+    products: {
+        items: Product[];
+        loading: boolean;
+        error: string | null;
+    };
+}
+
+const Catalogue: React.FC = () => {
     const dispatch = useDispatch();
-    const products = useSelector(state => state.products.items);
-    const loading = useSelector(state => state.products.loading);
-    const error = useSelector(state => state.products.error);
+    const products = useSelector((state: RootState) => state.products.items);
+    const loading = useSelector((state: RootState) => state.products.loading);
+    const error = useSelector((state: RootState) => state.products.error);
 
     useEffect(() => {
         dispatch(fetchProducts());

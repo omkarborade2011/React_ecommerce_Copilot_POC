@@ -3,16 +3,30 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateQuantity } from '../redux/actions/productActions';
 import './Cart.css';
 
-const Cart = () => {
-    const cartItems = useSelector(state => state.product.cart);
-    console.log("cartItems :",cartItems)
+interface CartItem {
+    id: number;
+    title: string;
+    price: number;
+    quantity: number;
+    image: string;
+}
+
+interface RootState {
+    product: {
+        cart: CartItem[];
+    };
+}
+
+const Cart: React.FC = () => {
+    const cartItems = useSelector((state: RootState) => state.product.cart);
+    console.log("cartItems :", cartItems);
     const dispatch = useDispatch();
 
-    const handleRemove = (id) => {
-        dispatch(removeFromCart(id));
+    const handleRemove = (id: number) => {
+        dispatch(removeFromCart({ id }));
     };
 
-    const handleQuantityChange = (id, quantity) => {
+    const handleQuantityChange = (id: number, quantity: number) => {
         dispatch(updateQuantity(id, quantity));
     };
 

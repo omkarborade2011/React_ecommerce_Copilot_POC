@@ -2,21 +2,18 @@ import React, { useEffect, useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import './Home.css';
 
-/**
- * Home component that displays a list of products fetched from an API.
- * It includes a search functionality to filter products based on the search term.
- *
- * @component
- * @example
- * return (
- *   <Home />
- * )
- *
- * @returns {JSX.Element} The rendered Home component.
- */
-const Home = () => {
-    const [products, setProducts] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
+interface Product {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
+}
+
+const Home: React.FC = () => {
+    const [products, setProducts] = useState<Product[]>([]);
+    const [searchTerm, setSearchTerm] = useState<string>('');
 
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')

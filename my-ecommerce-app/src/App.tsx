@@ -10,7 +10,7 @@ import Catalogue from './pages/Catalogue';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Provider store={store}>
       <Router>
@@ -28,6 +28,6 @@ function App() {
       </Router>
     </Provider>
   );
-}
+};
 
 export default App;
