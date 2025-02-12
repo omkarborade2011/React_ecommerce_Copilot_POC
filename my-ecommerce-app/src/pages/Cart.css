@@ -45,6 +45,7 @@
     border-radius: 4px;
 }
 
+/* Improved styling for the remove button */
 .cart-item button {
     background-color: #e60000;
     color: #fff;
@@ -53,6 +54,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: auto; /* Align the button to the right */
 }
 
 .cart-item button:hover {

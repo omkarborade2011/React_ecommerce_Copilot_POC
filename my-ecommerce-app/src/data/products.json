@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "title": "Apple MacBook Pro 16-inch",
+    "price": 2399.99,
+    "description": "The ultimate laptop experience for professionals.",
+    "category": "laptops",
+    "image": "https://m.media-amazon.com/images/I/71L2iBSyyOL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    }
+  },
+  {
+    "id": 2,
+    "title": "Apple iPhone 14",
+    "price": 999.99,
+    "description": "Experience the future of smart communication.",
+    "category": "smartphones",
+    "image": "https://m.media-amazon.com/images/I/71657TiFeHL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 200
+    }
+  },
+  {
+    "id": 3,
+    "title": "Apple iPad Air",
+    "price": 599.99,
+    "description": "Lightweight and powerful tablet for everyday use.",
+    "category": "tablets",
+    "image": "https://m.media-amazon.com/images/I/71z8blSlQQL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 150
+    }
+  },
+  {
+    "id": 4,
+    "title": "Apple Watch Series 8",
+    "price": 399.99,
+    "description": "Stay connected, healthy, and active with the latest smartwatch.",
+    "category": "wearables",
+    "image": "https://m.media-amazon.com/images/I/61c8a3MUe5L._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 180
+    }
+  },
+  {
+    "id": 5,
+    "title": "Apple AirPods Pro",
+    "price": 249.99,
+    "description": "Immersive sound quality and active noise cancellation.",
+    "category": "audio",
+    "image": "https://m.media-amazon.com/images/I/71zny7BTRlL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 250
+    }
+  },
+  {
+    "id": 6,
+    "title": "Sony PlayStation 5",
+    "price": 499.99,
+    "description": "The latest generation of PlayStation gaming console.",
+    "category": "gaming",
+    "image": "https://m.media-amazon.com/images/I/619BkvKW35L._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 300
+    }
+  },
+  {
+    "id": 7,
+    "title": "Samsung 49-Inch Curved Gaming Monitor",
+    "price": 1499.99,
+    "description": "Ultra-wide curved monitor for an immersive gaming experience.",
+    "category": "monitors",
+    "image": "https://m.media-amazon.com/images/I/81sMPaBsHOL._SX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 220
+    }
+  },
+  {
+    "id": 8,
+    "title": "Bose Noise Cancelling Headphones 700",
+    "price": 379.99,
+    "description": "High-quality noise-cancelling headphones for an immersive audio experience.",
+    "category": "audio",
+    "image": "https://m.media-amazon.com/images/I/71MmJNwZcML._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 180
+    }
+  },
+  {
+    "id": 9,
+    "title": "Canon EOS R5 Mirrorless Camera",
+    "price": 3899.99,
+    "description": "Professional-grade mirrorless camera with 8K video recording.",
+    "category": "cameras",
+    "image": "https://m.media-amazon.com/images/I/71I-hjr0yeL._SX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 150
+    }
+  },
+  {
+    "id": 10,
+    "title": "GoPro HERO9 Black",
+    "price": 399.99,
+    "description": "Waterproof action camera with 5K video and 20MP photos.",
+    "category": "cameras",
+    "image": "https://m.media-amazon.com/images/I/61A31TlXnuL._SX522_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 200
+    }
+  },
+  {
+    "id": 11,
+    "title": "Apple MacBook Air 13-inch",
+    "price": 999.99,
+    "description": "Lightweight and powerful laptop for everyday use.",
+    "category": "laptops",
+    "image": "https://m.media-amazon.com/images/I/71TPda7cwUL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 250
+    }
+  },
+  {
+    "id": 12,
+    "title": "Microsoft Surface Pro 7",
+    "price": 749.99,
+    "description": "Versatile 2-in-1 laptop with a detachable keyboard.",
+    "category": "laptops",
+    "image": "https://m.media-amazon.com/images/I/71Q3iSQAwAS._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 180
+    }
+  },
+  {
+    "id": 13,
+    "title": "Dell XPS 13",
+    "price": 1299.99,
+    "description": "Compact and powerful laptop with a stunning display.",
+    "category": "laptops",
+    "image": "https://m.media-amazon.com/images/I/71pC69I3lzL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 220
+    }
+  },
+  {
+    "id": 14,
+    "title": "Samsung Galaxy S21 Ultra",
+    "price": 1199.99,
+    "description": "High-end smartphone with a powerful camera system.",
+    "category": "smartphones",
+    "image": "https://m.media-amazon.com/images/I/71goZuIha-L._SX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 300
+    }
+  },
+  {
+    "id": 15,
+    "title": "Google Pixel 6",
+    "price": 699.99,
+    "description": "Smartphone with a clean Android experience and excellent camera.",
+    "category": "smartphones",
+    "image": "https://m.media-amazon.com/images/I/71c5W9NxN5L._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 250
+    }
+  },
+  {
+    "id": 16,
+    "title": "OnePlus 9 Pro",
+    "price": 969.99,
+    "description": "Flagship smartphone with fast performance and great display.",
+    "category": "smartphones",
+    "image": "https://m.media-amazon.com/images/I/61LvUvbZGlL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 220
+    }
+  },
+  {
+    "id": 17,
+    "title": "Sony WH-1000XM4",
+    "price": 349.99,
+    "description": "Industry-leading noise-cancelling headphones.",
+    "category": "audio",
+    "image": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 300
+    }
+  },
+  {
+    "id": 18,
+    "title": "JBL Flip 5",
+    "price": 119.99,
+    "description": "Portable waterproof Bluetooth speaker.",
+    "category": "audio",
+    "image": "https://m.media-amazon.com/images/I/71Xyg9SwRwL._SX522_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 180
+    }
+  },
+  {
+    "id": 19,
+    "title": "Fitbit Charge 5",
+    "price": 179.99,
+    "description": "Advanced fitness and health tracker.",
+    "category": "wearables",
+    "image": "https://m.media-amazon.com/images/I/71smqRr0pmL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 150
+    }
+  },
+  {
+    "id": 20,
+    "title": "Garmin Forerunner 945",
+    "price": 599.99,
+    "description": "Premium GPS running and triathlon smartwatch.",
+    "category": "wearables",
+    "image": "https://m.media-amazon.com/images/I/71GtgMbKvKL._SX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 200
+    }
+  },
+  {
+    "id": 100,
+    "title": "Apple AirPods Pro",
+    "price": 249.99,
+    "description": "Immersive sound quality and active noise cancellation.",
+    "category": "audio",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1591634795000",
+    "rating": {
+      "rate": 4.8,
+      "count": 270
+    }
+  }
+]

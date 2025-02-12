@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../redux/reducers';
 import './Navbar.css'; // Import the CSS file
 
 const Navbar: React.FC = () => {
+    const dispatch = useDispatch();
     const isAuthenticated = useSelector((state: RootState) => state.auth.isAuthenticated);
+
+    const handleLogout = () => {
+        dispatch({ type: 'LOGOUT' });
+    };
 
     return (
         <nav className="navbar">
@@ -17,14 +22,11 @@ const Navbar: React.FC = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/catalogue">Catalogue</Link>
-                </li>
-                <li>
                     <Link to="/cart">Cart</Link>
                 </li>
                 {isAuthenticated ? (
                     <li>
-                        <Link to="/logout">Logout</Link>
+                        <a href="#" onClick={handleLogout}>Logout</a>
                     </li>
                 ) : (
                     <li>

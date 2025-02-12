@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import './Home.css';
+import productsData from '../data/products.json';
 
 interface Product {
     id: number;
@@ -16,13 +17,14 @@ const Home: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState<string>('');
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(response => response.json())
-            .then(data => {
-                setProducts(data);
-            })
-            .catch(error => console.error("Error fetching products:", error));
+        // Use the imported JSON data instead of fetching from an API
+        setProducts(productsData);
     }, []);
+
+    const handleAddToCart = (product: Product) => {
+        // Add the product to the cart (implement your cart logic here)
+        console.log('Product added to cart:', product);
+    };
 
     const filteredProducts = products.filter(product =>
         product.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -43,7 +45,7 @@ const Home: React.FC = () => {
             <div className="product-list">
                 {filteredProducts && filteredProducts.length > 0 ? (
                     filteredProducts.map(product => (
-                        <ProductCard key={product.id} product={product} />
+                        <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />
                     ))
                 ) : (
                     <p>No products available.</p>

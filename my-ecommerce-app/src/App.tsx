@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Catalogue from './pages/Catalogue';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import ProductDetail from './pages/ProductDetail';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/catalogue" component={Catalogue} />
             <Route path="/cart" component={Cart} />
             <Route path="/checkout" component={Checkout} />
+            <Route path="/product/:id" component={ProductDetail} />
           </Switch>
           <Footer />
         </div>
