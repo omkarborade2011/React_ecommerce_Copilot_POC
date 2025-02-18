@@ -23,7 +23,7 @@ interface LoginFailureAction {
     type: typeof LOGIN_FAILURE;
     payload: string;
 }
-
+// Removed duplicate LoginRequestAction interface
 interface LogoutAction {
     type: typeof LOGOUT;
 }
